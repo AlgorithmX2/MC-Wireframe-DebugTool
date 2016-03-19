@@ -20,8 +20,8 @@ public class ASMTransformer implements IClassTransformer
 			final MethodNode mn,
 			final ClassNode classNode )
 	{
-		final boolean signatureMatch = mn.desc.equals( "(Ladf;)V" )
-				|| mn.desc.equals( "(Lnet/minecraft/util/EnumWorldBlockLayer;)V" );
+		final boolean signatureMatch = mn.desc.equals( "(Lahm;)V" )
+				|| mn.desc.equals( "(Lnet/minecraft/util/BlockRenderLayer;)V" );
 		final boolean nameMatch = mn.name.equals( "renderChunkLayer" ) || mn.name.equals( "a" ) || mn.name.equals( "func_178001_a" );
 
 		if ( nameMatch && signatureMatch )
